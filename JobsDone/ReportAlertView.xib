@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReportAlertView" customModule="SocialNet" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="POr-Wo-vVb" id="CYM-d0-Xkm"/>
+                <outlet property="descriptionTextView" destination="ByL-LG-eSo" id="Noj-ER-p8d"/>
+                <outlet property="reportButton" destination="zRL-nT-bEo" id="JHY-N5-Myd"/>
+                <outlet property="reportTypeButton" destination="SXQ-st-hVw" id="2sm-5b-HBr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WAView" customModule="SocialNet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="260"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0D-0I-0xO">
+                    <rect key="frame" x="259" y="53" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="fh4-fN-40e"/>
+                        <constraint firstAttribute="width" constant="30" id="tPY-XR-y1b"/>
+                    </constraints>
+                    <state key="normal" image="down-arrow"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXQ-st-hVw" customClass="WAButton" customModule="SocialNet" customModuleProvider="target">
+                    <rect key="frame" x="8" y="53" width="281" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="n4B-Wc-9TS"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="spam">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="reportTypeSelects:" destination="-1" eventType="touchUpInside" id="Cf9-0R-q3T"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efL-fq-j0F">
+                    <rect key="frame" x="8" y="20" width="53" height="19.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ByL-LG-eSo" customClass="WATextView" customModule="SocialNet" customModuleProvider="target">
+                    <rect key="frame" x="8" y="97" width="281" height="110"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="LbU-mG-aFe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRL-nT-bEo">
+                    <rect key="frame" x="236" y="215" width="53" height="32"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <state key="normal" title="Report"/>
+                    <connections>
+                        <action selector="reportSelects:" destination="-1" eventType="touchUpInside" id="pyz-e0-YSL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POr-Wo-vVb">
+                    <rect key="frame" x="166" y="215" width="50" height="32"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Cancel"/>
+                    <connections>
+                        <action selector="cancelSelects:" destination="-1" eventType="touchUpInside" id="DiN-CU-51f"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ByL-LG-eSo" secondAttribute="trailing" constant="11" id="0Rx-mq-WoV"/>
+                <constraint firstItem="f0D-0I-0xO" firstAttribute="centerY" secondItem="SXQ-st-hVw" secondAttribute="centerY" id="2Iu-J8-329"/>
+                <constraint firstItem="POr-Wo-vVb" firstAttribute="top" secondItem="ByL-LG-eSo" secondAttribute="bottom" constant="8" id="3x5-yt-u1a"/>
+                <constraint firstItem="zRL-nT-bEo" firstAttribute="leading" secondItem="POr-Wo-vVb" secondAttribute="trailing" constant="20" id="AqG-dh-58T"/>
+                <constraint firstItem="f0D-0I-0xO" firstAttribute="bottom" secondItem="SXQ-st-hVw" secondAttribute="bottom" id="IGA-5J-f2a"/>
+                <constraint firstItem="zRL-nT-bEo" firstAttribute="top" secondItem="ByL-LG-eSo" secondAttribute="bottom" constant="8" id="LDK-nF-fTT"/>
+                <constraint firstAttribute="trailing" secondItem="zRL-nT-bEo" secondAttribute="trailing" constant="11" id="Lzg-Ah-Bwu"/>
+                <constraint firstItem="SXQ-st-hVw" firstAttribute="top" secondItem="efL-fq-j0F" secondAttribute="bottom" constant="13.5" id="PEo-9v-SsX"/>
+                <constraint firstItem="ByL-LG-eSo" firstAttribute="top" secondItem="f0D-0I-0xO" secondAttribute="bottom" constant="14" id="Xhr-ZP-DzC"/>
+                <constraint firstItem="f0D-0I-0xO" firstAttribute="height" secondItem="SXQ-st-hVw" secondAttribute="height" id="Y0Z-Pr-rJv"/>
+                <constraint firstItem="f0D-0I-0xO" firstAttribute="leading" secondItem="SXQ-st-hVw" secondAttribute="trailing" constant="-30" id="dzT-Gi-uLg"/>
+                <constraint firstItem="f0D-0I-0xO" firstAttribute="top" secondItem="SXQ-st-hVw" secondAttribute="top" id="hyW-px-65V"/>
+                <constraint firstItem="ByL-LG-eSo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="iXw-Oq-UCx"/>
+                <constraint firstItem="SXQ-st-hVw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="jlG-Td-NKw"/>
+                <constraint firstAttribute="trailing" secondItem="SXQ-st-hVw" secondAttribute="trailing" constant="11" id="lu3-u3-evv"/>
+                <constraint firstItem="efL-fq-j0F" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="qYu-7X-FVL"/>
+                <constraint firstItem="efL-fq-j0F" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="zD7-7d-QX0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="67" y="31"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="down-arrow" width="22" height="22"/>
+    </resources>
+</document>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoAttachAlertView" customModule="SchoolChain" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="vgh-XS-esO" id="GcP-IC-9zV"/>
+                <outlet property="chooseTypeButton" destination="o4z-HR-6ek" id="8i8-1G-7dB"/>
+                <outlet property="chooseVideoButton" destination="iLz-d0-XWh" id="5o4-jj-Rst"/>
+                <outlet property="doneButton" destination="HIe-q7-73p" id="Y7V-gE-bB7"/>
+                <outlet property="urlTextField" destination="0uN-Mt-qWx" id="mOG-xf-JgM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="hmO-Wh-7rY">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o4z-HR-6ek" customClass="WAButton" customModule="SchoolChain" customModuleProvider="target">
+                    <rect key="frame" x="20" y="30" width="200" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="B8x-sw-dyd"/>
+                    </constraints>
+                    <state key="normal" title="Choose Type"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.4788140655" blue="0.99942928549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="chooseButtonSelects:" destination="-1" eventType="touchUpInside" id="Qgn-ya-uAC"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Write Video Link..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0uN-Mt-qWx" customClass="WATextField" customModule="SchoolChain" customModuleProvider="target">
+                    <rect key="frame" x="20" y="70" width="200" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="G9A-BI-4ho"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.4788140655" blue="0.99942928549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6Od-1n-VOU">
+                    <rect key="frame" x="0.0" y="105" width="240" height="35"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgh-XS-esO" customClass="WAButton" customModule="SchoolChain" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="120" height="35"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <state key="normal" title="Cancel"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="backgroundColors">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="cancelButtonSelects:" destination="-1" eventType="touchUpInside" id="mZQ-Cf-DJs"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIe-q7-73p" customClass="WAButton" customModule="SchoolChain" customModuleProvider="target">
+                            <rect key="frame" x="120" y="0.0" width="120" height="35"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="Done"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="backgroundColors">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="doneSelects:" destination="-1" eventType="touchUpInside" id="Twd-H9-s8O"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="6Oz-or-fLQ"/>
+                    </constraints>
+                </stackView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLz-d0-XWh">
+                    <rect key="frame" x="20" y="70" width="200" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Choose Video"/>
+                    <connections>
+                        <action selector="chooseVideoSelects:" destination="-1" eventType="touchUpInside" id="1QA-U8-8ea"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="o4z-HR-6ek" secondAttribute="trailing" constant="20" id="0Q6-6Q-69J"/>
+                <constraint firstItem="0uN-Mt-qWx" firstAttribute="leading" secondItem="hmO-Wh-7rY" secondAttribute="leading" constant="20" id="5eE-wh-hng"/>
+                <constraint firstItem="iLz-d0-XWh" firstAttribute="centerX" secondItem="0uN-Mt-qWx" secondAttribute="centerX" id="E4V-jE-roz"/>
+                <constraint firstAttribute="trailing" secondItem="6Od-1n-VOU" secondAttribute="trailing" id="GIA-K8-dqL"/>
+                <constraint firstItem="6Od-1n-VOU" firstAttribute="leading" secondItem="hmO-Wh-7rY" secondAttribute="leading" id="PoL-fF-Ldk"/>
+                <constraint firstItem="iLz-d0-XWh" firstAttribute="height" secondItem="0uN-Mt-qWx" secondAttribute="height" id="Ue8-qT-RCd"/>
+                <constraint firstItem="o4z-HR-6ek" firstAttribute="leading" secondItem="hmO-Wh-7rY" secondAttribute="leading" constant="20" id="Xj5-S4-9SQ"/>
+                <constraint firstAttribute="bottom" secondItem="6Od-1n-VOU" secondAttribute="bottom" id="Zfi-Qj-ERh"/>
+                <constraint firstItem="o4z-HR-6ek" firstAttribute="top" secondItem="hmO-Wh-7rY" secondAttribute="top" constant="30" id="hYD-eA-t57"/>
+                <constraint firstItem="0uN-Mt-qWx" firstAttribute="top" secondItem="o4z-HR-6ek" secondAttribute="bottom" constant="10" id="iZj-Lm-2St"/>
+                <constraint firstAttribute="trailing" secondItem="0uN-Mt-qWx" secondAttribute="trailing" constant="20" id="ju6-MX-Rg9"/>
+                <constraint firstItem="iLz-d0-XWh" firstAttribute="width" secondItem="0uN-Mt-qWx" secondAttribute="width" id="rfP-ui-R6z"/>
+                <constraint firstItem="iLz-d0-XWh" firstAttribute="centerY" secondItem="0uN-Mt-qWx" secondAttribute="centerY" id="u5b-c6-MTr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

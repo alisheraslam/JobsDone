@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SkillPopCell" customModule="JobsDone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="272" height="48"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="272" height="48"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5W-T1-WUe">
+                        <rect key="frame" x="0.0" y="0.0" width="272" height="48"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LLl-Sd-OGS" customClass="WAView" customModule="JobsDone" customModuleProvider="target">
+                                <rect key="frame" x="5" y="5" width="262" height="38"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rcl-JO-thz">
+                                        <rect key="frame" x="10" y="9" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="DX2-bf-Lov"/>
+                                            <constraint firstAttribute="width" constant="20" id="rrv-l7-3bH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhl-wZ-K3T">
+                                        <rect key="frame" x="40" y="8.5" width="212" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.41568627450000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="uhl-wZ-K3T" secondAttribute="bottom" constant="8.5" id="47B-cM-aaY"/>
+                                    <constraint firstItem="rcl-JO-thz" firstAttribute="leading" secondItem="LLl-Sd-OGS" secondAttribute="leading" constant="10" id="8sF-U6-oX0"/>
+                                    <constraint firstAttribute="width" constant="262" id="G5z-Xf-JLR"/>
+                                    <constraint firstItem="uhl-wZ-K3T" firstAttribute="centerY" secondItem="LLl-Sd-OGS" secondAttribute="centerY" id="Jhm-WG-chU"/>
+                                    <constraint firstItem="uhl-wZ-K3T" firstAttribute="top" secondItem="LLl-Sd-OGS" secondAttribute="top" constant="8.5" id="LXP-6X-qb9"/>
+                                    <constraint firstAttribute="trailing" secondItem="uhl-wZ-K3T" secondAttribute="trailing" constant="10" id="Rfm-NU-Lys"/>
+                                    <constraint firstItem="rcl-JO-thz" firstAttribute="centerY" secondItem="LLl-Sd-OGS" secondAttribute="centerY" id="ks3-N5-OOU"/>
+                                    <constraint firstItem="uhl-wZ-K3T" firstAttribute="leading" secondItem="rcl-JO-thz" secondAttribute="trailing" constant="10" id="vhz-d5-gSf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LLl-Sd-OGS" firstAttribute="leading" secondItem="s5W-T1-WUe" secondAttribute="leading" constant="5" id="Eie-72-C6M"/>
+                            <constraint firstAttribute="bottom" secondItem="LLl-Sd-OGS" secondAttribute="bottom" constant="5" id="N49-bW-lz3"/>
+                            <constraint firstAttribute="trailing" secondItem="LLl-Sd-OGS" secondAttribute="trailing" constant="5" id="gtb-cT-DqE"/>
+                            <constraint firstItem="LLl-Sd-OGS" firstAttribute="top" secondItem="s5W-T1-WUe" secondAttribute="top" constant="5" id="lUt-o9-ZZO"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="s5W-T1-WUe" secondAttribute="bottom" id="Vkc-xV-hF9"/>
+                <constraint firstAttribute="trailing" secondItem="s5W-T1-WUe" secondAttribute="trailing" id="csb-nz-jh5"/>
+                <constraint firstItem="s5W-T1-WUe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oyL-cY-FWe"/>
+                <constraint firstItem="s5W-T1-WUe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="poo-vl-06I"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="272" height="48"/>
+            <connections>
+                <outlet property="cellView" destination="LLl-Sd-OGS" id="XcL-jp-ljW"/>
+                <outlet property="imgSkill" destination="rcl-JO-thz" id="Nmm-EH-ISx"/>
+                <outlet property="name" destination="uhl-wZ-K3T" id="4qY-q7-cSN"/>
+                <outlet property="widthConstraint" destination="G5z-Xf-JLR" id="bQK-uU-WvD"/>
+            </connections>
+            <point key="canvasLocation" x="143" y="58"/>
+        </collectionViewCell>
+    </objects>
+</document>

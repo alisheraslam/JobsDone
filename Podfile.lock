@@ -1,0 +1,255 @@
+PODS:
+  - AACarousel (1.1.1)
+  - ActionSheetPicker-3.0 (2.7.4)
+  - ActiveLabel (1.1.0)
+  - AFNetworking (2.7.0):
+    - AFNetworking/NSURLConnection (= 2.7.0)
+    - AFNetworking/NSURLSession (= 2.7.0)
+    - AFNetworking/Reachability (= 2.7.0)
+    - AFNetworking/Security (= 2.7.0)
+    - AFNetworking/Serialization (= 2.7.0)
+    - AFNetworking/UIKit (= 2.7.0)
+  - AFNetworking/NSURLConnection (2.7.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.7.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.7.0)
+  - AFNetworking/Security (2.7.0)
+  - AFNetworking/Serialization (2.7.0)
+  - AFNetworking/UIKit (2.7.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Alamofire (5.9.1)
+  - AlamofireImage (4.3.0):
+    - Alamofire (~> 5.8)
+  - Alertift (4.2.0)
+  - BSImagePicker (3.3.2)
+  - CardIO (5.4.1)
+  - Cosmos (25.0.1)
+  - CropViewController (2.7.4)
+  - Cupcake (1.3.1)
+  - DKCamera (1.6.7)
+  - DKImagePickerController (4.3.9):
+    - DKImagePickerController/Camera (= 4.3.9)
+    - DKImagePickerController/Core (= 4.3.9)
+    - DKImagePickerController/ImageDataManager (= 4.3.9)
+    - DKImagePickerController/InlineCamera (= 4.3.9)
+    - DKImagePickerController/PhotoEditor (= 4.3.9)
+    - DKImagePickerController/PhotoGallery (= 4.3.9)
+    - DKImagePickerController/Resource (= 4.3.9)
+  - DKImagePickerController/Camera (4.3.9):
+    - DKCamera
+    - DKImagePickerController/Core
+  - DKImagePickerController/Core (4.3.9):
+    - DKImagePickerController/ImageDataManager
+    - DKImagePickerController/Resource
+  - DKImagePickerController/ImageDataManager (4.3.9)
+  - DKImagePickerController/InlineCamera (4.3.9):
+    - DKCamera
+    - DKImagePickerController/Core
+  - DKImagePickerController/PhotoEditor (4.3.9):
+    - CropViewController (~> 2.5)
+    - DKImagePickerController/Core
+  - DKImagePickerController/PhotoGallery (4.3.9):
+    - DKImagePickerController/Core
+    - DKPhotoGallery
+  - DKImagePickerController/Resource (4.3.9)
+  - DKPhotoGallery (0.0.19):
+    - DKPhotoGallery/Core (= 0.0.19)
+    - DKPhotoGallery/Model (= 0.0.19)
+    - DKPhotoGallery/Preview (= 0.0.19)
+    - DKPhotoGallery/Resource (= 0.0.19)
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Core (0.0.19):
+    - DKPhotoGallery/Model
+    - DKPhotoGallery/Preview
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Model (0.0.19):
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Preview (0.0.19):
+    - DKPhotoGallery/Model
+    - DKPhotoGallery/Resource
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Resource (0.0.19):
+    - SDWebImage
+    - SwiftyGif
+  - EGOCache (2.2.0)
+  - FBAEMKit (17.0.1):
+    - FBSDKCoreKit_Basics (= 17.0.1)
+  - FBSDKCoreKit (17.0.1):
+    - FBAEMKit (= 17.0.1)
+    - FBSDKCoreKit_Basics (= 17.0.1)
+  - FBSDKCoreKit_Basics (17.0.1)
+  - FBSDKLoginKit (17.0.1):
+    - FBSDKCoreKit (= 17.0.1)
+  - FontAwesome.swift (1.1.1)
+  - FSImageViewer (3.4):
+    - AFNetworking (~> 2.5)
+    - EGOCache (~> 2.1)
+    - UAProgressView (~> 0.1)
+  - GLNotificationBar (2.3.5)
+  - GoogleMaps (7.4.0):
+    - GoogleMaps/Maps (= 7.4.0)
+  - GoogleMaps/Base (7.4.0)
+  - GoogleMaps/Maps (7.4.0):
+    - GoogleMaps/Base
+  - GooglePlaces (7.4.0)
+  - IOSLinkedInAPIFix (2.0.4):
+    - AFNetworking (>= 2.0.0)
+  - JSQMessagesViewController (7.3.5):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
+  - Kingfisher (7.11.0)
+  - LinkedinSwift (1.6.6):
+    - AFNetworking (>= 2.6.3)
+    - IOSLinkedInAPIFix (>= 2.0.3)
+  - NextGrowingTextView (2.1.0)
+  - PayPal-iOS-SDK (2.18.1):
+    - PayPal-iOS-SDK/CardIO (= 2.18.1)
+    - PayPal-iOS-SDK/Core (= 2.18.1)
+  - PayPal-iOS-SDK/CardIO (2.18.1):
+    - CardIO (~> 5.4.1)
+  - PayPal-iOS-SDK/Core (2.18.1)
+  - RGPageViewController (1.0.0)
+  - RichEditorView (5.0.0)
+  - SDWebImage (5.19.2):
+    - SDWebImage/Core (= 5.19.2)
+  - SDWebImage/Core (5.19.2)
+  - SlideMenuControllerSwift (4.0.0)
+  - SwiftyGif (5.4.5)
+  - TwitterCore (3.2.0)
+  - TwitterKit (3.4.2):
+    - TwitterCore (>= 3.2.0)
+  - UAProgressView (0.1.4)
+  - UICircularProgressRing (8.0.0)
+
+DEPENDENCIES:
+  - AACarousel
+  - ActionSheetPicker-3.0
+  - ActiveLabel
+  - AFNetworking
+  - Alamofire
+  - AlamofireImage
+  - Alertift
+  - BSImagePicker
+  - Cosmos
+  - CropViewController
+  - Cupcake
+  - DKImagePickerController
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - FontAwesome.swift (~> 1.1.1)
+  - FSImageViewer (~> 3.4)
+  - GLNotificationBar
+  - GoogleMaps
+  - GooglePlaces
+  - JSQMessagesViewController
+  - Kingfisher
+  - LinkedinSwift
+  - NextGrowingTextView
+  - PayPal-iOS-SDK
+  - RGPageViewController
+  - RichEditorView
+  - SDWebImage
+  - SlideMenuControllerSwift
+  - TwitterKit
+  - UICircularProgressRing
+
+SPEC REPOS:
+  trunk:
+    - AACarousel
+    - ActionSheetPicker-3.0
+    - ActiveLabel
+    - AFNetworking
+    - Alamofire
+    - AlamofireImage
+    - Alertift
+    - BSImagePicker
+    - CardIO
+    - Cosmos
+    - CropViewController
+    - Cupcake
+    - DKCamera
+    - DKImagePickerController
+    - DKPhotoGallery
+    - EGOCache
+    - FBAEMKit
+    - FBSDKCoreKit
+    - FBSDKCoreKit_Basics
+    - FBSDKLoginKit
+    - FontAwesome.swift
+    - FSImageViewer
+    - GLNotificationBar
+    - GoogleMaps
+    - GooglePlaces
+    - IOSLinkedInAPIFix
+    - JSQMessagesViewController
+    - JSQSystemSoundPlayer
+    - Kingfisher
+    - LinkedinSwift
+    - NextGrowingTextView
+    - PayPal-iOS-SDK
+    - RGPageViewController
+    - RichEditorView
+    - SDWebImage
+    - SlideMenuControllerSwift
+    - SwiftyGif
+    - TwitterCore
+    - TwitterKit
+    - UAProgressView
+    - UICircularProgressRing
+
+SPEC CHECKSUMS:
+  AACarousel: e0dbd2d3153c56c36df8aa282553f20fc88e132b
+  ActionSheetPicker-3.0: a380d57270b6b2d321c4add024ba5c466a7f5cfd
+  ActiveLabel: 5e3f4de79a1952d4604b845a0610d4776e4b82b3
+  AFNetworking: 9d57de7506959955d82fb5274ee4bec86b930e52
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  AlamofireImage: 843953fa97bee5f561cf05d83abd759e590b068d
+  Alertift: 17b37be915cd28edeceabd438e4134d041ea825c
+  BSImagePicker: 568ba98dcd066fb10f85dc84e3f8385881bdd1f8
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
+  Cosmos: 02db0a1c953107049bfd2d7af19ceef55ecb7e98
+  CropViewController: 3489bbf95a3e11c654382b0bae08ac645cdf1b93
+  Cupcake: d258b6c0c289f7072340990107892aeb20d3fe98
+  DKCamera: a902b66921fca14b7a75266feb8c7568aa7caa71
+  DKImagePickerController: 946cec48c7873164274ecc4624d19e3da4c1ef3c
+  DKPhotoGallery: b3834fecb755ee09a593d7c9e389d8b5d6deed60
+  EGOCache: 191fd213da6804d487b49b1a91772ba904f3e324
+  FBAEMKit: 97eaf41451b49691447df831f7f425229ae64b66
+  FBSDKCoreKit: e34084567d11cfdd4787ace2b1a0255bedf34ade
+  FBSDKCoreKit_Basics: 3d78e5fe00504e5c1aed1c48de0654c3a1565d15
+  FBSDKLoginKit: 9a581053879a1e6fc3fab8ead341c78c6a318255
+  FontAwesome.swift: f4ff5a9199dc3b510eba5bb377e834f159aef358
+  FSImageViewer: 0dea92069cce74a800b75cb8777c923f2be59124
+  GLNotificationBar: c439ff7acb306ad32e1c0caa74e041c69f959244
+  GoogleMaps: 032f676450ba0779bd8ce16840690915f84e57ac
+  GooglePlaces: 544e908d94860bf6f8fc1865b80d2c7eb6b5f937
+  IOSLinkedInAPIFix: a520fd805a03dade35f42904c7d89ded2a84c752
+  JSQMessagesViewController: 6587f56aedbcb150a8ba1d968e1ef58b1bc758b7
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  Kingfisher: b9c985d864d43515f404f1ef4a8ce7d802ace3ac
+  LinkedinSwift: cda2916f08950f662fbec33176dc38aefc5b4c2c
+  NextGrowingTextView: 249ac6c55877ded085460a397477eca0d19ebabc
+  PayPal-iOS-SDK: 70d56697aef502c130b9840e31dea5c6b8a350e1
+  RGPageViewController: bdbcd3a380407f7c1cd49bead33cc188a3787c97
+  RichEditorView: 1bbb07b87ca2d479ac29a6877014b38b8df233ef
+  SDWebImage: dfe95b2466a9823cf9f0c6d01217c06550d7b29a
+  SlideMenuControllerSwift: 021d6318201c53d4d4d3710517d43d6c556c7dd0
+  SwiftyGif: 706c60cf65fa2bc5ee0313beece843c8eb8194d4
+  TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
+  TwitterKit: 5e4f41d70b9abdb41df5467f52d7aa2c0fd26ebb
+  UAProgressView: 6796f5aa05037fb2940521636163b9db40a6c534
+  UICircularProgressRing: 19927375b2b21b5fa5fd9582f15ccdef9659da16
+
+PODFILE CHECKSUM: 1a68112f45e5925ed64805c11ae443cab12317dd
+
+COCOAPODS: 1.15.2
