@@ -47,8 +47,8 @@ class ALFWebService: NSObject {
         
         if Utilities.isLoggedIn(){
             
-            headers?["oauth_token"] = UserDefaults.standard.value(forKey: "oauth_token") as? String
-            headers?["oauth_secret"] = UserDefaults.standard.value(forKey: "oauth_secret") as? String
+            headers?["oauth-token"] = UserDefaults.standard.value(forKey: "oauth_token") as? String
+            headers?["oauth-secret"] = UserDefaults.standard.value(forKey: "oauth_secret") as? String
             print(headers!)
             }
         
@@ -129,8 +129,8 @@ class ALFWebService: NSObject {
         
         if Utilities.isLoggedIn(){
             
-            headers?["oauth_token"] = UserDefaults.standard.value(forKey: "oauth_token") as? String
-            headers?["oauth_secret"] = UserDefaults.standard.value(forKey: "oauth_secret") as? String
+            headers?["oauth-token"] = UserDefaults.standard.value(forKey: "oauth_token") as? String
+            headers?["oauth-secret"] = UserDefaults.standard.value(forKey: "oauth_secret") as? String
             print(headers!)
         }
 
@@ -173,8 +173,8 @@ class ALFWebService: NSObject {
         
         if Utilities.isLoggedIn(){
             
-            headers?["oauth_token"] = UserDefaults.standard.value(forKey: "oauth_token") as? String
-            headers?["oauth_secret"] = UserDefaults.standard.value(forKey: "oauth_secret") as? String
+            headers?["oauth-token"] = UserDefaults.standard.value(forKey: "oauth_token") as? String
+            headers?["oauth-secret"] = UserDefaults.standard.value(forKey: "oauth_secret") as? String
             print(headers!)
         }
         
@@ -216,8 +216,8 @@ class ALFWebService: NSObject {
         
         if Utilities.isLoggedIn(){
             
-            headers?["oauth_token"] = UserDefaults.standard.value(forKey: "oauth_token") as? String
-            headers?["oauth_secret"] = UserDefaults.standard.value(forKey: "oauth_secret") as? String
+            headers?["oauth-token"] = UserDefaults.standard.value(forKey: "oauth_token") as? String
+            headers?["oauth-secret"] = UserDefaults.standard.value(forKey: "oauth_secret") as? String
             print(headers!)
         }
         
@@ -260,8 +260,8 @@ class ALFWebService: NSObject {
         
         if Utilities.isLoggedIn(){
             
-            headers?["oauth_token"] = UserDefaults.standard.value(forKey: "oauth_token") as? String
-            headers?["oauth_secret"] = UserDefaults.standard.value(forKey: "oauth_secret") as? String
+            headers?["oauth-token"] = UserDefaults.standard.value(forKey: "oauth_token") as? String
+            headers?["oauth-secret"] = UserDefaults.standard.value(forKey: "oauth_secret") as? String
             print(headers!)
         }
        
@@ -334,8 +334,8 @@ class ALFWebService: NSObject {
         
         if Utilities.isLoggedIn(){
             
-            headers?["oauth_token"] = UserDefaults.standard.value(forKey: "oauth_token") as? String
-            headers?["oauth_secret"] = UserDefaults.standard.value(forKey: "oauth_secret") as? String
+            headers?["oauth-token"] = UserDefaults.standard.value(forKey: "oauth_token") as? String
+            headers?["oauth-secret"] = UserDefaults.standard.value(forKey: "oauth_secret") as? String
             print(headers!)
         }
         
@@ -412,8 +412,8 @@ class ALFWebService: NSObject {
         
         if Utilities.isLoggedIn(){
             
-            headers?["oauth_token"] = UserDefaults.standard.value(forKey: "oauth_token") as? String
-            headers?["oauth_secret"] = UserDefaults.standard.value(forKey: "oauth_secret") as? String
+            headers?["oauth-token"] = UserDefaults.standard.value(forKey: "oauth_token") as? String
+            headers?["oauth-secret"] = UserDefaults.standard.value(forKey: "oauth_secret") as? String
             print(headers!)
         }
         
@@ -479,8 +479,8 @@ class ALFWebService: NSObject {
         
         if Utilities.isLoggedIn(){
             
-            headers?["oauth_token"] = UserDefaults.standard.value(forKey: "oauth_token") as? String
-            headers?["oauth_secret"] = UserDefaults.standard.value(forKey: "oauth_secret") as? String
+            headers?["oauth-token"] = UserDefaults.standard.value(forKey: "oauth_token") as? String
+            headers?["oauth-secret"] = UserDefaults.standard.value(forKey: "oauth_secret") as? String
             print(headers!)
         }
         
@@ -562,8 +562,8 @@ class ALFWebService: NSObject {
         
         if Utilities.isLoggedIn(){
             
-            headers?["oauth_token"] = UserDefaults.standard.value(forKey: "oauth_token") as? String
-            headers?["oauth_secret"] = UserDefaults.standard.value(forKey: "oauth_secret") as? String
+            headers?["oauth-token"] = UserDefaults.standard.value(forKey: "oauth_token") as? String
+            headers?["oauth-secret"] = UserDefaults.standard.value(forKey: "oauth_secret") as? String
             print(headers!)
         }
         

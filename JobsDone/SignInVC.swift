@@ -235,8 +235,8 @@ class SignInVC: UIViewController ,UITextFieldDelegate{
                                 }
                             }
                             
-                            if let oauth_token = body["oauth_token"] as? String{
-                                if let oauth_secret = body["oauth_secret"] as? String{
+                            if let oauth_token = body["oauth-token"] as? String{
+                                if let oauth_secret = body["oauth-secret"] as? String{
                                     self.user.oauthToken = oauth_token
                                     self.user.oauthSecret = oauth_secret
                                 }
@@ -553,8 +553,8 @@ class SignInVC: UIViewController ,UITextFieldDelegate{
                         } else if let usr = body["user"] as? Dictionary<String, AnyObject> {
                             self.user = User.init(fromDictionary: usr)
                             
-                            if let oauth_token = body["oauth_token"] as? String{
-                                if let oauth_secret = body["oauth_secret"] as? String{
+                            if let oauth_token = body["oauth-token"] as? String{
+                                if let oauth_secret = body["oauth-secret"] as? String{
                                     self.user.oauthToken = oauth_token
                                     self.user.oauthSecret = oauth_secret
                                 }

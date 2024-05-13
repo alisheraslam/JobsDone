@@ -342,7 +342,7 @@ class FindProfessionalVC: UIViewController,UITableViewDelegate,UITableViewDataSo
         {
             cell.parent = self
             cell.featuredArr = self.featuredArr
-            DispatchQueue.global().async {
+            DispatchQueue.main.async {
                 cell.collectionViewTbl.reloadData()
             }
             cell.configCell(identifier : cell.reuseIdentifier!)

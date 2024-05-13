@@ -201,8 +201,8 @@ class ImageVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCont
             headers =  ["oauth-consumer-key":oauth_consumer_key,"oauth-consumer-secret":oauth_consumer_secret,"Accept":"application/json"]
             if Utilities.isLoggedIn(){
                 
-                headers?["oauth_token"] = UserDefaults.standard.value(forKey: "oauth_token") as? String
-                headers?["oauth_secret"] = UserDefaults.standard.value(forKey: "oauth_secret") as? String
+                headers?["oauth-token"] = UserDefaults.standard.value(forKey: "oauth_token") as? String
+                headers?["oauth-secret"] = UserDefaults.standard.value(forKey: "oauth_secret") as? String
                 print(headers!)
             }
             DispatchQueue.main.async {

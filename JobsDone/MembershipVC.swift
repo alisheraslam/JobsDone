@@ -314,8 +314,8 @@ class MembershipVC: UIViewController,UICollectionViewDelegate,UICollectionViewDa
                             }
                         }
                         
-                        if let oauth_token = body!["oauth_token"] as? String{
-                            if let oauth_secret = body!["oauth_secret"] as? String{
+                        if let oauth_token = body!["oauth-token"] as? String{
+                            if let oauth_secret = body!["oauth-secret"] as? String{
                                 user.oauthToken = oauth_token
                                 user.oauthSecret = oauth_secret
                             }
@@ -429,8 +429,8 @@ class MembershipVC: UIViewController,UICollectionViewDelegate,UICollectionViewDa
                                     }
                                 }
                                 
-                                if let oauth_token = body["oauth_token"] as? String{
-                                    if let oauth_secret = body["oauth_secret"] as? String{
+                                if let oauth_token = body["oauth-token"] as? String{
+                                    if let oauth_secret = body["oauth-secret"] as? String{
                                         user.oauthToken = oauth_token
                                         user.oauthSecret = oauth_secret
                                     }
@@ -532,8 +532,8 @@ class MembershipVC: UIViewController,UICollectionViewDelegate,UICollectionViewDa
                                         }
                                     }
                                     
-                                    if let oauth_token = body["oauth_token"] as? String{
-                                        if let oauth_secret = body["oauth_secret"] as? String{
+                                    if let oauth_token = body["oauth-token"] as? String{
+                                        if let oauth_secret = body["oauth-secret"] as? String{
                                             user.oauthToken = oauth_token
                                             user.oauthSecret = oauth_secret
                                         }

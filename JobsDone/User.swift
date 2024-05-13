@@ -104,8 +104,8 @@ class User: NSObject {
         memberCount = dictionary["member_count"] as? Int
         mobileUpdate = dictionary["mobile_update"] as? Int
         modifiedDate = dictionary["modified_date"] as? String
-        oauthSecret = dictionary["oauth_secret"] as? String
-        oauthToken = dictionary["oauth_token"] as? String
+        oauthSecret = dictionary["oauth-secret"] as? String
+        oauthToken = dictionary["oauth-token"] as? String
         notes  = dictionary["notes"] as? String
         email = dictionary["email"] as? String
         if let pho = dictionary["phone"] as? String{
@@ -250,10 +250,10 @@ class User: NSObject {
             dictionary["modified_date"] = modifiedDate
         }
         if oauthSecret != nil{
-            dictionary["oauth_secret"] = oauthSecret
+            dictionary["oauth-secret"] = oauthSecret
         }
         if oauthToken != nil{
-            dictionary["oauth_token"] = oauthToken
+            dictionary["oauth-token"] = oauthToken
         }
         if phone != nil{
             dictionary["phone"] = phone

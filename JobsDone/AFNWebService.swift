@@ -65,8 +65,8 @@ class AFNWebService: NSObject {
         
         
         if Utilities.isLoggedIn(){
-            manager.requestSerializer.setValue(UserDefaults.standard.value(forKey: "oauth_token") as? String, forHTTPHeaderField: "oauth_token")
-            manager.requestSerializer.setValue(UserDefaults.standard.value(forKey: "oauth_secret") as? String, forHTTPHeaderField: "oauth_secret")
+            manager.requestSerializer.setValue(UserDefaults.standard.value(forKey: "oauth_token") as? String, forHTTPHeaderField: "oauth-token")
+            manager.requestSerializer.setValue(UserDefaults.standard.value(forKey: "oauth_secret") as? String, forHTTPHeaderField: "oauth-secret")
         }
         print(media as Any)
         print(forMethod)
@@ -102,8 +102,8 @@ class AFNWebService: NSObject {
         
         
         if Utilities.isLoggedIn(){
-            manager.requestSerializer.setValue(UserDefaults.standard.value(forKey: "oauth_token") as? String, forHTTPHeaderField: "oauth_token")
-            manager.requestSerializer.setValue(UserDefaults.standard.value(forKey: "oauth_secret") as? String, forHTTPHeaderField: "oauth_secret")
+            manager.requestSerializer.setValue(UserDefaults.standard.value(forKey: "oauth_token") as? String, forHTTPHeaderField: "oauth-token")
+            manager.requestSerializer.setValue(UserDefaults.standard.value(forKey: "oauth_secret") as? String, forHTTPHeaderField: "oauth-secret")
         }
 
 
@@ -141,8 +141,8 @@ class AFNWebService: NSObject {
         manager.requestSerializer.setValue(oauth_consumer_secret, forHTTPHeaderField: "oauth-consumer-secret")
         
         if Utilities.isLoggedIn(){
-            manager.requestSerializer.setValue(UserDefaults.standard.value(forKey: "oauth_token") as? String, forHTTPHeaderField: "oauth_token")
-            manager.requestSerializer.setValue(UserDefaults.standard.value(forKey: "oauth_secret") as? String, forHTTPHeaderField: "oauth_secret")
+            manager.requestSerializer.setValue(UserDefaults.standard.value(forKey: "oauth_token") as? String, forHTTPHeaderField: "oauth-token")
+            manager.requestSerializer.setValue(UserDefaults.standard.value(forKey: "oauth_secret") as? String, forHTTPHeaderField: "oauth-secret")
         }
 
        
@@ -167,8 +167,8 @@ class AFNWebService: NSObject {
         
         
         if Utilities.isLoggedIn(){
-            manager.requestSerializer.setValue(UserDefaults.standard.value(forKey: "oauth_token") as? String, forHTTPHeaderField: "oauth_token")
-            manager.requestSerializer.setValue(UserDefaults.standard.value(forKey: "oauth_secret") as? String, forHTTPHeaderField: "oauth_secret")
+            manager.requestSerializer.setValue(UserDefaults.standard.value(forKey: "oauth_token") as? String, forHTTPHeaderField: "oauth-token")
+            manager.requestSerializer.setValue(UserDefaults.standard.value(forKey: "oauth_secret") as? String, forHTTPHeaderField: "oauth-secret")
         }
 
         manager.get(forMethod, parameters: parameters, success: { (task, formData) in
